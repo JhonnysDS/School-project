@@ -1,0 +1,90 @@
+ .section-container-overall {
+     background-image: url('../../../../assets/images/students-g98104d6ce_1280.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     height: 100vh;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+     .div-title {
+         h1 {
+             font-size: 50px;
+             font-family: 'Patrick Hand', cursive;
+             margin-bottom: 145px;
+         }
+     }
+
+     .div-container-overall {
+         background-color: rgb(3, 97, 3);
+         width: 500px;
+         padding: 20px;
+         border-radius: 25px;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+
+         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+         .avatar {
+             background-color: red;
+             width: 100%;
+
+             img {
+                 width: 200px;
+                 border-radius: 50%;
+                 border: solid black;
+                 position: absolute;
+                 top: -125px;
+                 left: 168px;
+             }
+         }
+
+         .div-form {
+             margin: 90px 10px 10px 10px;
+
+             .div-subtitle {
+                 text-align: center;
+
+                 h2 {
+                     font-size: 35px;
+                     color: white;
+                     font-family: 'Patrick Hand', cursive;
+
+                 }
+
+             }
+
+             .form {
+                 width: 500px;
+
+                 .div-input {
+                     display: flex;
+                     justify-content: center;
+
+                     .mat-form-field {
+                         width: 95%;
+                     }
+
+                 }
+
+                 .div-button {
+                     display: flex;
+                     justify-content: flex-end;
+
+                     button {
+                         margin: 20px;
+                         font-family: 'Patrick Hand', cursive;
+
+
+                     }
+                 }
+             }
+         }
+     }
+ }
