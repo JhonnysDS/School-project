@@ -5,6 +5,7 @@
      background-position: center center;
      height: 100vh;
 
+
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -87,4 +88,48 @@
              }
          }
      }
+ }
+
+ @media screen and (max-width: 547px) {
+
+    .section-container-overall {
+   
+        .div-title {
+            h1 {
+
+            }
+        }
+   
+        .div-container-overall {
+            width: 320px;
+            padding: 10px;
+   
+            .avatar {
+   
+                img {
+                    width: 150px;
+                    top: -101px;
+                    left: 92px;
+                }
+            }
+   
+            .div-form {
+   
+                .div-subtitle {
+                    text-align: center;
+   
+                    h2 {
+   
+                    }
+   
+                }
+   
+                .form {
+                    width: 320px;
+   
+                }
+            }
+        }
+    }
+    
  }
