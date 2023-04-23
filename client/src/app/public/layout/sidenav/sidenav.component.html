@@ -1,43 +1,54 @@
-<nz-layout>
-    <nz-sider nzCollapsible nzWidth="200px">
-      <div class="logo"></div>
-      <ul nz-menu nzTheme="dark" nzMode="inline">
-        <li nz-menu-item>
-          <span nz-icon nzType="pie-chart"></span>
-          <span>Option 1</span>
-        </li>
-        <li nz-menu-item>
-          <span nz-icon nzType="desktop"></span>
-          <span>Option 2</span>
-        </li>
-        <li nz-submenu nzTitle="User" nzIcon="user">
-          <ul>
-            <li nz-menu-item>Tom</li>
-            <li nz-menu-item>Bill</li>
-            <li nz-menu-item>Alex</li>
-          </ul>
-        </li>
-        <li nz-submenu nzTitle="Team" nzIcon="team">
-          <ul>
-            <li nz-menu-item>Team 1</li>
-            <li nz-menu-item>Team 2</li>
-          </ul>
-        </li>
-        <li nz-menu-item>
-          <span nz-icon nzType="file"></span>
-          <span>File</span>
-        </li>
+<mat-drawer-container class="container"  autosize>
+  <mat-drawer #drawer class="sidenav" opened mode="over">
+    <div class="img-container">
+      <img src="../../../../assets/images/Captura_de_pantalla_2023-04-23_160836-removebg-preview.png" alt="">
+      <hr>
+    </div>
+    <div class="div-list-navbar">
+      <ul>
+          <li> <i class="fa-regular fa-building"></i> Proyectos</li>
+          <li ><p (click)="toggle()"> <i class="fa-solid fa-users"></i> Mis referidos 
+            <!-- <ng-template [ngIf]="!isVisible"><i  class="fa-sharp fa-solid fa-chevron-down"></i></ng-template>  
+            <ng-template [ngIf]="isVisible"><i class="fa-solid fa-chevron-up"></i></ng-template>   -->
+          </p>
+            <!-- <ul   [ngClass]="{'display-none': !isVisible, 'display-block': isVisible}" class="sub-ul "><li class="sub-li"><i class="fa-solid fa-user-plus"></i> Agregar</li></ul> -->
+
+          </li>
+
       </ul>
-    </nz-sider>
-    <nz-layout>
-      <nz-header></nz-header>
-      <nz-content>
-        <nz-breadcrumb>
-          <nz-breadcrumb-item>User</nz-breadcrumb-item>
-          <nz-breadcrumb-item>Bill</nz-breadcrumb-item>
-        </nz-breadcrumb>
-        <div class="inner-content"></div>
-      </nz-content>
-      <!-- <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer> -->
-    </nz-layout>
-  </nz-layout>
+    </div>
+  </mat-drawer>
+
+  <div class="sidenav-content">
+      <div class="div-navbar">
+          <div class="div-bar-icon">
+              <i (click)="drawer.toggle()" class="fa-solid fa-bars fa-2x"></i>
+          </div>
+          <div class="div-container-per-info">
+              <div class="div-avatar">
+                  <img src="../../../../assets/images/img_avatar1.png" alt="Avatar" class="avatar">
+              </div>
+              <div class="div-navbar-per-infor">
+                  <h2>Jhonnys De Avila</h2>
+                  <p>Desarrollador</p>
+              </div>
+              <div class="div-more-expand">
+                <button mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon>expand_more</mat-icon></button>
+                <mat-menu  class="mat-menu" #beforeMenu="matMenu" xPosition="before">
+                    <button routerLink="/profile"  mat-menu-item>Mi perfil</button>
+                    <button mat-menu-item>Cerrar sesión</button>
+                </mat-menu>
+            </div>           
+          </div>
+      </div>
+    <div class="div-content" id="htmlData">
+      <!-- <app-list-project></app-list-project> -->
+      <!-- <button class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button> -->
+      <!-- <app-list-referred></app-list-referred> -->
+      <!-- <app-list-referreds-admin></app-list-referreds-admin> -->
+      <app-register></app-register>
+      <!-- <app-form-quote></app-form-quote> -->
+    </div>
+  </div>
+
+</mat-drawer-container>

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent {
+  isVisible = false;
 
+  toggle() {
+    this.isVisible = !this.isVisible;
+  }
 }
