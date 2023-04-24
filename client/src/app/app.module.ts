@@ -19,6 +19,7 @@ import { NgZorroModule } from './modules/ng-zorro/ng-zorro.module';
 import { NZ_ICONS } from 'ng-zorro-antd/icon';
 import * as AllIcons from '@ant-design/icons-angular/icons';
 import es from '@angular/common/locales/es';
+import { ListUserComponent } from './private/users/list-user/list-user.component';
 
 export interface IconDefinition {
   name: string;
@@ -57,6 +58,7 @@ registerLocaleData(en);
     LoginComponent,
     RegisterComponent,
     SidenavComponent,
+    ListUserComponent,
   ],
   imports: [
     BrowserModule,
