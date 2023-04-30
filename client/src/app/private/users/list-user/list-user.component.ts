@@ -15,7 +15,8 @@ export interface PeriodicElement {
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {id: 1, name: 'Hydrogen', lastname: "de avila", document: 1.0079, email: 'H', cell: 123456, course: "12B" },
+  {id: 1, name: 'Jhonnys David', lastname: "De Avila Salgado", document: 1002188478, email: 'jdeavilasalgado@gmail.com', cell: 3236447442, course: "11" },
+  {id: 2, name: 'Kalel', lastname: "Morningstar", document: 1001882094, email: 'kalel@gmail.com', cell: 3045363050, course: "8" },
 
 ];
 
