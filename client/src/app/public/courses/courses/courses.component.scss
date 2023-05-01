@@ -72,3 +72,12 @@
     font-weight: 700;
   }
 }
+
+.button-container{
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  button{
+    background-color: rgb(255, 187, 0);
+  }
+}
